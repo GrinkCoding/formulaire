@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquete de satisfaction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Au bon burger : Enquête de satisfaction</h1>
+        <p id="description">Merci de prendre un peu de votre temps pour répondre</p>
+        <form id="survey-form">
+            <div class="form-group">
+              <label for="name" id="name-label">Nom</label>
+              <input type="text" name="name" id="name" placeholder="Votre Nom" required>
+            </div>
+           <div class="form-group">
+              <label for="email" id="email-label">Adresse mail</label>
+              <input type="email" name="email" id="email" placeholder="Votre adresse mail" required>
+           </div>
+           <div class="form-group">
+              <label for="number" id="number-label">Age</label>
+              <input type="number" name="number" id="number" min="0" max="99" placeholder="Age">
+           </div>
+            <div class="form-group">
+              <p>Choississez votre burger préféré</p>
+              <select name="dropdown" id="dropdown">
+                  <option value="" disabled selected >Selectionnez votre burger</option>
+                  <option value="le welsh burger">Le welsh burger</option>
+                  <option value="le burger du chef">Le burger du chef</option>
+                  <option value="le vegetarien">Le végétarien</option>
+                  <option value="le fish">Le fish</option>
+                  <option value="le chicken">Le chicken</option>
+                  <option value="aucun">Aucun</option>
+              </select>
+           </div>
+          <div class="form-group">
+            <p>Recommanderiez-vous le bon burger a un ami ?</p>
+            <label>
+              <input type="radio" name="recommandation" value="absolument" checked>
+              Absolument
+            </label>
+            <label>
+              <input type="radio" name="recommandation" value="peut-être">
+              Peut-être
+            </label>
+            <label>
+              <input type="radio" name="recommandation" value="pas du tout">
+              Pas du tout
+            </label>
+          </div>
+          <div class="form-group">
+            <p>Quel nouveau burger souhaiterez-vous voir apparaitre à la carte du restaurant ?</p>
+            <label for="baguette">
+              <input type="checkbox" name="nouveau" value="baguette" id="baguette">
+              Le baguette</label>
+            
+            <label for="sardine">
+              <input type="checkbox" name="nouveau" value="sardine" id="sardine">
+              Le sardine
+            </label>
+            
+            <label for="bleu">
+              <input type="checkbox" name="nouveau" value="bleu" id="bleu">
+              Le bleu
+            </label>
+            
+            <label for="double">
+              <input type="checkbox" name="nouveau" value="double" id="double">
+              Le double du chef
+            </label>
+            
+            <label for="grec">
+              <input type="checkbox" name="nouveau" value="grec" id="grec">
+              Le grec
+            </label>
+            
+            <label for="grillé">
+              <input type="checkbox" name="nouveau" value="grillé" id="grillé">
+              Le végétarien grillé
+            </label>
+
+            <label for="caille">
+              <input type="checkbox" name="nouveau" value="caille" id="caille">
+              Le big caille
+            </label>
+          </div>
+          
+          <div class="form-group"> 
+            <p>Avez-vous un commentaire ou une suggestion a ajouté ?</p>
+            <textarea name="comments" id="comments" placeholder="Ajoutez un commentaire ou une suggestion" rows="10" cols="50"></textarea>
+          </div>
+          <div class="form-group">
+            <input id="submit" type="submit">
+          </div>
+
+        </form>
+        
+      </div>
+    
+</body>
+</html>
